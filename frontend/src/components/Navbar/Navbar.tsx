@@ -58,7 +58,7 @@ export default function Navbar() {
           height={20}
         />
         <div id="header" className="hidden md:flex gap-4 items-center">
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
           <DropdownMenu>
             <DropdownMenuTrigger>Brands</DropdownMenuTrigger>
             <DropdownMenuContent>
@@ -76,8 +76,8 @@ export default function Navbar() {
               <DropdownMenuItem>Yellow</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="#">Contact</Link>
-          <Link href="#">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/about">About</Link>
         </div>
 
         <div id="account" className="flex items-center gap-2">
