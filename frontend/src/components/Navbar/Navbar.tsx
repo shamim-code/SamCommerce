@@ -91,8 +91,23 @@ export default function Navbar() {
               <i className="ri-search-line text-xl px-1 rounded-full text-black bg-[#F5F7FA]"></i>
             </Button>
           </form>
-          <i className="ri-account-circle-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i>
-          <i className="ri-shopping-cart-2-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i>
+          <DropdownMenu>
+            <DropdownMenuTrigger><i className="ri-account-circle-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i></DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
+                <Link href="#">Profile</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
+                <Link href="#">Logout</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          
+          <span className=" relative">
+            <i className="ri-shopping-cart-2-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i>
+            <span className=" text-[8px] bg-red-500 px-1 text-white rounded-full absolute -top-1 right-0">10</span>
+          </span>
         </div>
 
         <div id="social" className="hidden md:flex items-center text-xl">

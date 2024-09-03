@@ -56,9 +56,9 @@ export default function page() {
             <h1 className='text-sm font-semibold'>Tom Cruise</h1>
             <p className='text-xs'>Founder & Chairman</p>
             <div id="social" className='flex gap-2'>
-              <i className="ri-twitter-line"></i>
-              <i className="ri-instagram-line"></i>
-              <i className="ri-linkedin-line"></i>
+            <i className="ri-twitter-line cursor-pointer hover:text-blue-600"></i>
+              <i className="ri-instagram-line cursor-pointer hover:text-orange-500"></i>
+              <i className="ri-linkedin-line rounded-full cursor-pointer hover:text-blue-600"></i>
             </div>
           </div>
 
@@ -67,9 +67,9 @@ export default function page() {
             <h1 className='text-sm font-semibold'>Tom Cruise</h1>
             <p className='text-xs'>Founder & Chairman</p>
             <div id="social" className='flex gap-2'>
-              <i className="ri-twitter-line"></i>
-              <i className="ri-instagram-line"></i>
-              <i className="ri-linkedin-line"></i>
+            <i className="ri-twitter-line cursor-pointer hover:text-blue-600"></i>
+              <i className="ri-instagram-line cursor-pointer hover:text-orange-500"></i>
+              <i className="ri-linkedin-line rounded-full cursor-pointer hover:text-blue-600"></i>
             </div>
           </div>
 
@@ -79,9 +79,9 @@ export default function page() {
             <h1 className='text-sm font-semibold'>Tom Cruise</h1>
             <p className='text-xs'>Founder & Chairman</p>
             <div id="social" className='flex gap-2'>
-              <i className="ri-twitter-line"></i>
-              <i className="ri-instagram-line"></i>
-              <i className="ri-linkedin-line"></i>
+              <i className="ri-twitter-line cursor-pointer hover:text-blue-600"></i>
+              <i className="ri-instagram-line cursor-pointer hover:text-orange-500"></i>
+              <i className="ri-linkedin-line rounded-full cursor-pointer hover:text-blue-600"></i>
             </div>
           </div>
 

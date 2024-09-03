@@ -19,7 +19,7 @@ export default function ProductCard(props:any) {
   const router = useRouter();
 
   return (
-    <Card onClick={()=> router.push('/page')} className=' max-w-[150px] m-2 inline-block md:max-w-[250px] cursor-pointer'>
+    <Card onClick={()=> router.push('/order')} className=' max-w-[150px] m-2 inline-block md:max-w-[250px] cursor-pointer'>
       <CardHeader>
         <div className='relative'>
             <Image height={200} width={200} src={props.img} alt={props.title} />
