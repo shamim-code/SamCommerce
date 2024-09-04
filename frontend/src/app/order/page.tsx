@@ -7,7 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from '@/components/ui/button';
 
 export default function page() {
-  const [rating, setRating] = useState(0)
+  const [rating, setRating] = useState(0);
   return (
     <div>
       <Navbar />
