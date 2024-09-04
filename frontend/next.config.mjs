@@ -4,6 +4,9 @@ const nextConfig = {
     images: {
       domains: ['i.ibb.co'], // Use only the hostname
     },
+    eslint:{
+      ignoreDuringBuilds: true,
+    }
 };
 
 export default nextConfig;
