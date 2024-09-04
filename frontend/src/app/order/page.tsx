@@ -13,7 +13,7 @@ export default function page() {
       <Navbar />
 
       <div id="product-details" className="flex gap-4 justify-center items-center py-5 px-2 md:mx-56">
-        <img className=" h-[250px] w-[300px] md:h-[300px] w-[400px] rounded-sm" src="https://i.ibb.co/MGpGZsT/tshir.jpg" alt="T-shirt" />
+        <img className=" h-[250px] w-[300px] md:h-[300px] md:w-[400px] rounded-sm" src="https://i.ibb.co/MGpGZsT/tshir.jpg" alt="T-shirt" />
         <div id='info' className='flex flex-col gap-2 py-10'>
           <h1>Classic T-Shirt</h1>
           <div id='info2' className='flex gap-4'>
