@@ -65,15 +65,15 @@ export default function Navbar() {
               <DropdownMenuLabel>Brands</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <Link href="#">Easy</Link>
+                <Link href="/easy">Easy</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="#">Arong</Link>
+                <Link href="/arong">Arong</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="#">Dorjibari</Link>
+                <Link href="/dorjibari">Dorjibari</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>Yellow</DropdownMenuItem>
+              <DropdownMenuItem><Link href="/yellow">Yellow</Link></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/contact">Contact</Link>
@@ -96,7 +96,7 @@ export default function Navbar() {
             <DropdownMenuContent>
               <DropdownMenuSeparator />
               <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
-                <Link href="#">Profile</Link>
+                <Link href="/profile">Profile</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
                 <Link href="#">Logout</Link>
@@ -153,15 +153,15 @@ export default function Navbar() {
               <DropdownMenuLabel>Brands</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <Link href="#">Easy</Link>
+                <Link href="/easy">Easy</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="#">Arong</Link>
+                <Link href="/arong">Arong</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="#">Dorjibari</Link>
+                <Link href="/dorjibari">Dorjibari</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem><Link href="#">Yellow</Link></DropdownMenuItem>
+              <DropdownMenuItem><Link href="/yellow">Yellow</Link></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
