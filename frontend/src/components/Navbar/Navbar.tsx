@@ -14,10 +14,15 @@ import 'remixicon/fonts/remixicon.css';
 import { Button } from "../ui/button";
 import { useRef, useState, useEffect } from "react";
 import { gsap } from 'gsap';
+import { useRouter } from "next/navigation";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebar = useRef(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const nevigate = useRouter();
 
   const array = ['Home','Brands', 'About', 'Contact',]
 
@@ -95,17 +100,25 @@ export default function Navbar() {
             <DropdownMenuTrigger><i className="ri-account-circle-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i></DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
+              {
+                isLoggedIn ? <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
                 <Link href="/profile">Profile</Link>
+              </DropdownMenuItem> : <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
+                <Link href="/signup">SignUp</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
+              }
+              {
+                isLoggedIn ? <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
                 <Link href="#">Logout</Link>
+              </DropdownMenuItem>: <DropdownMenuItem className="text-black hover:bg-red-500 hover:text-white">
+                <Link href="login">Login</Link>
               </DropdownMenuItem>
+              }
             </DropdownMenuContent>
           </DropdownMenu>
           
           <span className=" relative">
-            <i className="ri-shopping-cart-2-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i>
+            <i onClick={()=> nevigate.push('/order')} className="ri-shopping-cart-2-line text-xl bg-[#F5F7FA] px-1 rounded-full cursor-pointer"></i>
             <span className=" text-[8px] bg-red-500 px-1 text-white rounded-full absolute -top-1 right-0">10</span>
           </span>
         </div>
